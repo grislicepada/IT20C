@@ -18,4 +18,4 @@ function quotient(num1,num2){
 sum(2,3);
 diff(5,3);
 product(17,5);
-quotient(6,7);
+quotient(35,5);
