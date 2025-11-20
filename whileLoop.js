@@ -23,12 +23,12 @@
 // }
 // console.log(output);
 
-arr = [1,2,3];
+arr = [4,3,2];
 output = " ";
-index = 1;
+index = 0;
 
-while (index <=arr.length){
-    output += index + " ";
+while (index <=arr.length-1){
+    output += arr[index] + " ";
     index++;
 }
 console.log(output);
