@@ -1,11 +1,11 @@
 // //For Loop
-// output = " ";
-// for (i = 1; i <= 5; i++) {
-//     //console.log(+i);
+output = " ";
+for (i = 1; i <= 5; i++) {
+    //console.log(+i);
 
-//     output += i + " ";
-// }
-// console.log(output);
+    output += i + " ";
+}
+console.log(output);
 
 //Arrays
 output = " ";
