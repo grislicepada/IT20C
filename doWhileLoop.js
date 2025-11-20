@@ -19,12 +19,24 @@ do{
 //     console.log(output);
 
 
+// output = " ";
+// i = 5;
+
+// do {
+//     output += i + " ";
+//     i--;
+// } while (i>= 1)
+
+// console.log(output);
+
+// Array
+
+arr = [4, 2, 3];
+index = 0;
 output = " ";
-i = 5;
 
 do {
-    output += i + " ";
-    i--;
-} while (i>= 1)
-
+    output += arr[index] + " ";
+    index++;
+} while (index <= arr.length);
 console.log(output);
