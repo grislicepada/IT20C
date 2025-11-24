@@ -19,9 +19,28 @@ class array{
         console.log(output);
     }
 
+    insert(index,data){
+        //correcting statement
+        if(index < 0 || index > this.length){
+            console.log("Invalid index");
+            return;
+
+        }
+
+        //shifting conditon
+        for(let i = this.length; i > index; i--){
+            this.data[i] = this.data[i-1];
+
+        }
+        this.data[index] = data;
+        this.length++;
+    }
+
 }
 
+
 arr1 = new array([4,2,3]);
+
 arr1.traverse();
-arr2 = new array([3,2,1]);
-arr2.traverse();
+arr1.insert(0,50);
+arr1.traverse();
