@@ -54,11 +54,27 @@ class array {
         }
         this.data[index]=element;
     }
+
+    delete(index){
+        //Correcting statement
+        if(index < 0 || index >= this.length){
+            console.log("Invalid Index");
+            return;
+
+        }
+        //SHIFTING
+        for(let i = index; i < this.length; i++){
+            this.data[i] = this.data[i+1];
+
+        }
+        delete this.data[this.length-1];
+        this.length--;
+    }
 }
 
 arr1 = new array([4, 2, 3]);
 arr1.traverse();
-arr1.insert(0, 50);
+arr1.update(1,50);
 arr1.traverse();
-arr1.update(50);
-arr1.update(10);
+arr1.delete(0);
+arr1.traverse();
